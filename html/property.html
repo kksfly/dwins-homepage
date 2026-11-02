@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property & Treaty | INS Corp.</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="../css/style.css?v=5">
+  <style>
+    .key-list {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.75rem;
+    }
+    .key-list-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--brand-blue-light);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .key-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+    .key-item:last-child {
+      border-bottom: none;
+    }
+    .key-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--brand-blue-light);
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="brand-logo" aria-label="INS Corp. 홈으로 이동">
+        <img src="../images/logo.png" alt="INS Corp. Innovation & Solution">
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="주요 메뉴">
+        <div class="nav-item has-dropdown">
+          <a href="message.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            ABOUT US
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="message.html" class="dropdown-link">CEO's Message</a>
+            <a href="vision.html" class="dropdown-link">Vision & Philosophy</a>
+            <a href="history.html" class="dropdown-link">History</a>
+            <a href="organization.html" class="dropdown-link">Organization</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="service.html" class="nav-link">OUR SERVICE</a>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a href="business_line.html" class="nav-link active" aria-haspopup="true" aria-expanded="false">
+            BUSINESS LINE
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="business_line.html" class="dropdown-link">Overview</a>
+            <a href="property.html" class="dropdown-link">Property & Treaty</a>
+            <a href="casualty.html" class="dropdown-link">Casualty & Specialty</a>
+            <a href="marine.html" class="dropdown-link">Marine & Aviation</a>
+            <a href="engineering.html" class="dropdown-link">Engineering</a>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a href="network.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            OVERSEAS NETWORK
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="network.html" class="dropdown-link">Overview</a>
+            <a href="assurex.html" class="dropdown-link">Assurex Global</a>
+            <a href="verspieren.html" class="dropdown-link">Verspieren</a>
+            <a href="brokerslink.html" class="dropdown-link">Brokerslink</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="contribution.html" class="nav-link">SOCIAL CONTRIBUTION</a>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a href="contacts.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            CONTACTS US
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="contacts.html" class="dropdown-link">Contacts</a>
+            <a href="location.html" class="dropdown-link">Location</a>
+          </div>
+        </div>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="메뉴 토글" aria-expanded="false">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header bg-property">
+    <div class="container">
+      <span class="page-category">Business Line</span>
+      <h1 class="page-title">Property & Treaty</h1>
+      <p class="page-desc">Our technical expertise and experience allow us to deliver the correct price and the best security available.</p>
+
+      <div class="subpage-tabs">
+        <a href="business_line.html" class="tab-link">Overview</a>
+        <a href="property.html" class="tab-link active">Property & Treaty</a>
+        <a href="casualty.html" class="tab-link">Casualty & Specialty</a>
+        <a href="marine.html" class="tab-link">Marine & Aviation</a>
+        <a href="engineering.html" class="tab-link">Engineering</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="section">
+    <div class="container">
+      <div class="content-box">
+        <div class="grid-2" style="gap: 3rem; align-items: start;">
+          <div>
+            <h3 style="font-size: 1.4rem; color: var(--text-primary); margin-bottom: 1.25rem; font-weight: 700;">Property & Treaty Solutions</h3>
+            <p>
+              To prevent an uncertain physical loss of your company, business and or family properties caused by a physical accident such as fire, theft and some natural hazard, Property Insurance provides you the minimizing economical risk exposures and a chance of continuity of business and/or family affairs.
+            </p>
+            <p>
+              INS Corp.’s Property & Treaty Team work tirelessly on our clients’ behalf to negotiate the optimum insurance/reinsurance coverage at the most competitive terms available, and where standard products don’t fit the bill we work with our clients and markets to find innovative solutions that do.
+            </p>
+            <p>
+              Our team is ready to devote ourselves for your business on Property Facultative and Treaty. For the Property Facultative Risks, our technical expertise and experience allows us to ensure that the results we achieve for our clients are relevant, proper and delivered at the correct price and the best security available.
+            </p>
+            <p>
+              And for the Treaty Business, we work closely together with the international partners throughout the world to maximize the capacity and coverage to ensure that our clients can manage the safe retention strategy and risk portfolios.
+            </p>
+          </div>
+
+          <div>
+            <div class="key-list">
+              <div class="key-list-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                Key Coverage Areas
+              </div>
+              <div class="key-item"><span class="key-dot"></span> Package Insurance</div>
+              <div class="key-item"><span class="key-dot"></span> Korean Fire Policy Insurance</div>
+              <div class="key-item"><span class="key-dot"></span> Inland Floater Insurance</div>
+              <div class="key-item"><span class="key-dot"></span> Property Facility Risks</div>
+              <div class="key-item"><span class="key-dot"></span> Marine & Non-Marine Treaty Business</div>
+            </div>
+
+            <div style="margin-top: 2rem; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+              <h4 style="color: var(--text-primary); font-size: 1.05rem; margin-bottom: 0.5rem;">전담 문의</h4>
+              <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Property & Treaty 관련 문의는 전담 부서로 연락 주시기 바랍니다.</p>
+              <a href="mailto:property@dwins.co.kr" class="btn btn-primary" style="width: 100%;">
+                property@dwins.co.kr 문의하기
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="../images/logo.png" alt="INS Corp.">
+          <div class="footer-info">
+            <p><strong>주식회사 인스보험중개 (INS Corp.)</strong></p>
+            <p>(04540) 서울시 중구 남대문로 120 그레이츠청계 6층</p>
+            <p>6th Floor, Greits Cheonggye, 120 Namdaemun-ro, Jung-gu, Seoul, Korea 04540</p>
+            <p style="margin-top: 0.5rem;">TEL: +82-2-2088-2727 &nbsp;|&nbsp; FAX: +82-2-2088-2740</p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <div class="footer-links">
+            <a href="message.html" class="footer-link">About Us</a>
+            <a href="service.html" class="footer-link">Our Service</a>
+            <a href="business_line.html" class="footer-link">Business Line</a>
+            <a href="network.html" class="footer-link">Overseas Network</a>
+            <a href="contribution.html" class="footer-link">Social Contribution</a>
+            <a href="contacts.html" class="footer-link">Contacts Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="contacts.html" class="footer-link">Department Contacts</a>
+            <a href="location.html" class="footer-link">Office Location</a>
+            <a href="assurex.html" class="footer-link">Assurex Global</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; INS Corp. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

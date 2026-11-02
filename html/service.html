@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Service | INS Corp.</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="../css/style.css?v=5">
+  <style>
+    .service-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all var(--transition-normal);
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--brand-blue-light);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .service-img-wrapper {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .service-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .service-card:hover .service-img-wrapper img {
+      transform: scale(1.05);
+    }
+
+    .service-body {
+      padding: 2rem 1.75rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .service-tag {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--brand-blue-light);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+    }
+
+    .service-desc {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="brand-logo" aria-label="INS Corp. 홈으로 이동">
+        <img src="../images/logo.png" alt="INS Corp. Innovation & Solution">
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="주요 메뉴">
+        <div class="nav-item has-dropdown">
+          <a href="message.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            ABOUT US
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="message.html" class="dropdown-link">CEO's Message</a>
+            <a href="vision.html" class="dropdown-link">Vision & Philosophy</a>
+            <a href="history.html" class="dropdown-link">History</a>
+            <a href="organization.html" class="dropdown-link">Organization</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="service.html" class="nav-link active">OUR SERVICE</a>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a href="business_line.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            BUSINESS LINE
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="business_line.html" class="dropdown-link">Overview</a>
+            <a href="property.html" class="dropdown-link">Property & Treaty</a>
+            <a href="casualty.html" class="dropdown-link">Casualty & Specialty</a>
+            <a href="marine.html" class="dropdown-link">Marine & Aviation</a>
+            <a href="engineering.html" class="dropdown-link">Engineering</a>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a href="network.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            OVERSEAS NETWORK
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="network.html" class="dropdown-link">Overview</a>
+            <a href="assurex.html" class="dropdown-link">Assurex Global</a>
+            <a href="verspieren.html" class="dropdown-link">Verspieren</a>
+            <a href="brokerslink.html" class="dropdown-link">Brokerslink</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="contribution.html" class="nav-link">SOCIAL CONTRIBUTION</a>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a href="contacts.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            CONTACTS US
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="contacts.html" class="dropdown-link">Contacts</a>
+            <a href="location.html" class="dropdown-link">Location</a>
+          </div>
+        </div>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="메뉴 토글" aria-expanded="false">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header bg-service">
+    <div class="container">
+      <span class="page-category">Innovation & Solution</span>
+      <h1 class="page-title">Our Service</h1>
+      <p class="page-desc">고객사의 위험을 과학적으로 분석하고, 차별화된 종합 브로킹 및 사후 보상 서비스를 제공합니다.</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="section">
+    <div class="container">
+      <div class="grid-4">
+        <!-- Service 1: RMC -->
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="../images/rmc_img.jpg" alt="Risk Management Consulting">
+          </div>
+          <div class="service-body">
+            <span class="service-tag">RMC</span>
+            <h2 class="service-title">Risk Management Consulting</h2>
+            <p class="service-desc">
+              Drawing on our expertise and diverse experience we provide a value-added insurance structure integrating every facet of our client’s business. We do this with our proprietary risk analysis which offers a stable and efficient risk management system allowing our clients' flexibility in response to market demands.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 2: RB -->
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="../images/rb_img.jpg" alt="Retail Broking">
+          </div>
+          <div class="service-body">
+            <span class="service-tag">RB</span>
+            <h2 class="service-title">Retail Broking</h2>
+            <p class="service-desc">
+              We understand both the assured and the insurer and specialize in communicating the best efficiency in risk management for the assured and best understanding of the risk for the insurer. We aim to develop long-term relationships based on the mutual success of both the insurer and the assured.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 3: ReinB -->
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="../images/reinb_img.jpg" alt="Reinsurance Broking">
+          </div>
+          <div class="service-body">
+            <span class="service-tag">ReinB</span>
+            <h2 class="service-title">Reinsurance Broking</h2>
+            <p class="service-desc">
+              We provide the highest level of reinsurance security based on global standards designed to meet our client’s needs and unique requirements. We constantly search out and develop new markets that benefit our clients by utilizing our strong and well-established reinsurance infrastructure.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 4: CS -->
+        <div class="service-card">
+          <div class="service-img-wrapper">
+            <img src="../images/cs_img.jpg" alt="Claim Service">
+          </div>
+          <div class="service-body">
+            <span class="service-tag">CS</span>
+            <h2 class="service-title">Claim Service</h2>
+            <p class="service-desc">
+              We are proud of our effective claim service with a smooth claim handling process and expedient settlement period. We also consistently achieve a high rate of client satisfaction through our special claim service.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="../images/logo.png" alt="INS Corp.">
+          <div class="footer-info">
+            <p><strong>주식회사 인스보험중개 (INS Corp.)</strong></p>
+            <p>(04540) 서울시 중구 남대문로 120 그레이츠청계 6층</p>
+            <p>6th Floor, Greits Cheonggye, 120 Namdaemun-ro, Jung-gu, Seoul, Korea 04540</p>
+            <p style="margin-top: 0.5rem;">TEL: +82-2-2088-2727 &nbsp;|&nbsp; FAX: +82-2-2088-2740</p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <div class="footer-links">
+            <a href="message.html" class="footer-link">About Us</a>
+            <a href="service.html" class="footer-link">Our Service</a>
+            <a href="business_line.html" class="footer-link">Business Line</a>
+            <a href="network.html" class="footer-link">Overseas Network</a>
+            <a href="contribution.html" class="footer-link">Social Contribution</a>
+            <a href="contacts.html" class="footer-link">Contacts Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="contacts.html" class="footer-link">Department Contacts</a>
+            <a href="location.html" class="footer-link">Office Location</a>
+            <a href="assurex.html" class="footer-link">Assurex Global</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; INS Corp. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

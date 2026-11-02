@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casualty & Specialty | INS Corp.</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="../css/style.css?v=5">
+  <style>
+    .key-list {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.75rem;
+    }
+    .key-list-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--brand-blue-light);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .key-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+    .key-item:last-child {
+      border-bottom: none;
+    }
+    .key-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--brand-blue-light);
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="brand-logo" aria-label="INS Corp. 홈으로 이동">
+        <img src="../images/logo.png" alt="INS Corp. Innovation & Solution">
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="주요 메뉴">
+        <div class="nav-item has-dropdown">
+          <a href="message.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            ABOUT US
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="message.html" class="dropdown-link">CEO's Message</a>
+            <a href="vision.html" class="dropdown-link">Vision & Philosophy</a>
+            <a href="history.html" class="dropdown-link">History</a>
+            <a href="organization.html" class="dropdown-link">Organization</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="service.html" class="nav-link">OUR SERVICE</a>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a href="business_line.html" class="nav-link active" aria-haspopup="true" aria-expanded="false">
+            BUSINESS LINE
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="business_line.html" class="dropdown-link">Overview</a>
+            <a href="property.html" class="dropdown-link">Property & Treaty</a>
+            <a href="casualty.html" class="dropdown-link">Casualty & Specialty</a>
+            <a href="marine.html" class="dropdown-link">Marine & Aviation</a>
+            <a href="engineering.html" class="dropdown-link">Engineering</a>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a href="network.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            OVERSEAS NETWORK
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="network.html" class="dropdown-link">Overview</a>
+            <a href="assurex.html" class="dropdown-link">Assurex Global</a>
+            <a href="verspieren.html" class="dropdown-link">Verspieren</a>
+            <a href="brokerslink.html" class="dropdown-link">Brokerslink</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="contribution.html" class="nav-link">SOCIAL CONTRIBUTION</a>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a href="contacts.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            CONTACTS US
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="contacts.html" class="dropdown-link">Contacts</a>
+            <a href="location.html" class="dropdown-link">Location</a>
+          </div>
+        </div>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="메뉴 토글" aria-expanded="false">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header bg-casualty">
+    <div class="container">
+      <span class="page-category">Business Line</span>
+      <h1 class="page-title">Casualty & Specialty</h1>
+      <p class="page-desc">We have extensive product knowledge and ability to access to individual clients for their varied insurance requirements.</p>
+
+      <div class="subpage-tabs">
+        <a href="business_line.html" class="tab-link">Overview</a>
+        <a href="property.html" class="tab-link">Property & Treaty</a>
+        <a href="casualty.html" class="tab-link active">Casualty & Specialty</a>
+        <a href="marine.html" class="tab-link">Marine & Aviation</a>
+        <a href="engineering.html" class="tab-link">Engineering</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="section">
+    <div class="container">
+      <div class="content-box">
+        <div class="grid-2" style="gap: 3rem; align-items: start;">
+          <div>
+            <h3 style="font-size: 1.4rem; color: var(--text-primary); margin-bottom: 1.25rem; font-weight: 700;">Casualty & Specialty Solutions</h3>
+            <p>
+              Casualty insurance, often equated to liability insurance, is used to describe an area of insurance not directly concerned with life insurance, health insurance, or property insurance.
+            </p>
+            <p>
+              This category of insurance is quite broad, encompassing a range of situations and fields within the insurance industry. Strictly defining casualty insurance has become problematic in recent years with the rising popularity of multi-line insurance policies, but generally, it is designed for Third Party Liability Coverage of an individual or organization's negligent acts or omissions, Employee Theft and Dishonesty, and Burglary.
+            </p>
+            <p>
+              In the meantime, there are other types of casualty insurance developed in response to the latest trend in social and environmental issues: Cyber-Liability, Personal Information Leakage, Electronic Transactions, and more.
+            </p>
+            <p>
+              Our Casualty team has a wealth of experience in handling all forms of Casualty lines including specialist classes. We have built long-term and mutually beneficial relationships with many clients, providing both direct insurance and reinsurance broking services wherever and whenever needed.
+            </p>
+          </div>
+
+          <div>
+            <div class="key-list">
+              <div class="key-list-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                Key Coverage Areas
+              </div>
+              <div class="key-item"><span class="key-dot"></span> Bankers Blanket Bond Insurance</div>
+              <div class="key-item"><span class="key-dot"></span> Commercial General Liability (CGL)</div>
+              <div class="key-item"><span class="key-dot"></span> Product Liability (PL)</div>
+              <div class="key-item"><span class="key-dot"></span> Professional Indemnity (PI)</div>
+              <div class="key-item"><span class="key-dot"></span> Directors & Officers Liability (D&O)</div>
+              <div class="key-item"><span class="key-dot"></span> E-Biz & IT Risk (Cyber Liability)</div>
+              <div class="key-item"><span class="key-dot"></span> Kidnap & Ransom</div>
+              <div class="key-item"><span class="key-dot"></span> Medical Malpractice</div>
+            </div>
+
+            <div style="margin-top: 2rem; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+              <h4 style="color: var(--text-primary); font-size: 1.05rem; margin-bottom: 0.5rem;">전담 문의</h4>
+              <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Casualty & Specialty 관련 문의는 전담 부서로 연락 주시기 바랍니다.</p>
+              <a href="mailto:casualty@dwins.co.kr" class="btn btn-primary" style="width: 100%;">
+                casualty@dwins.co.kr 문의하기
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="../images/logo.png" alt="INS Corp.">
+          <div class="footer-info">
+            <p><strong>주식회사 인스보험중개 (INS Corp.)</strong></p>
+            <p>(04540) 서울시 중구 남대문로 120 그레이츠청계 6층</p>
+            <p>6th Floor, Greits Cheonggye, 120 Namdaemun-ro, Jung-gu, Seoul, Korea 04540</p>
+            <p style="margin-top: 0.5rem;">TEL: +82-2-2088-2727 &nbsp;|&nbsp; FAX: +82-2-2088-2740</p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <div class="footer-links">
+            <a href="message.html" class="footer-link">About Us</a>
+            <a href="service.html" class="footer-link">Our Service</a>
+            <a href="business_line.html" class="footer-link">Business Line</a>
+            <a href="network.html" class="footer-link">Overseas Network</a>
+            <a href="contribution.html" class="footer-link">Social Contribution</a>
+            <a href="contacts.html" class="footer-link">Contacts Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="contacts.html" class="footer-link">Department Contacts</a>
+            <a href="location.html" class="footer-link">Office Location</a>
+            <a href="assurex.html" class="footer-link">Assurex Global</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; INS Corp. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

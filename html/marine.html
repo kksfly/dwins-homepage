@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marine & Aviation | INS Corp.</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="../css/style.css?v=5">
+  <style>
+    .key-list {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.75rem;
+    }
+    .key-list-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--brand-blue-light);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .key-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-primary);
+      font-size: 0.95rem;
+    }
+    .key-item:last-child {
+      border-bottom: none;
+    }
+    .key-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--brand-blue-light);
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="brand-logo" aria-label="INS Corp. 홈으로 이동">
+        <img src="../images/logo.png" alt="INS Corp. Innovation & Solution">
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="주요 메뉴">
+        <div class="nav-item has-dropdown">
+          <a href="message.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            ABOUT US
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="message.html" class="dropdown-link">CEO's Message</a>
+            <a href="vision.html" class="dropdown-link">Vision & Philosophy</a>
+            <a href="history.html" class="dropdown-link">History</a>
+            <a href="organization.html" class="dropdown-link">Organization</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="service.html" class="nav-link">OUR SERVICE</a>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a href="business_line.html" class="nav-link active" aria-haspopup="true" aria-expanded="false">
+            BUSINESS LINE
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="business_line.html" class="dropdown-link">Overview</a>
+            <a href="property.html" class="dropdown-link">Property & Treaty</a>
+            <a href="casualty.html" class="dropdown-link">Casualty & Specialty</a>
+            <a href="marine.html" class="dropdown-link">Marine & Aviation</a>
+            <a href="engineering.html" class="dropdown-link">Engineering</a>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a href="network.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            OVERSEAS NETWORK
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="network.html" class="dropdown-link">Overview</a>
+            <a href="assurex.html" class="dropdown-link">Assurex Global</a>
+            <a href="verspieren.html" class="dropdown-link">Verspieren</a>
+            <a href="brokerslink.html" class="dropdown-link">Brokerslink</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="contribution.html" class="nav-link">SOCIAL CONTRIBUTION</a>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a href="contacts.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            CONTACTS US
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="contacts.html" class="dropdown-link">Contacts</a>
+            <a href="location.html" class="dropdown-link">Location</a>
+          </div>
+        </div>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="메뉴 토글" aria-expanded="false">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header bg-marine">
+    <div class="container">
+      <span class="page-category">Business Line</span>
+      <h1 class="page-title">Marine & Aviation</h1>
+      <p class="page-desc">Even we are proud of our service, we never be satisfied by ourselves.</p>
+
+      <div class="subpage-tabs">
+        <a href="business_line.html" class="tab-link">Overview</a>
+        <a href="property.html" class="tab-link">Property & Treaty</a>
+        <a href="casualty.html" class="tab-link">Casualty & Specialty</a>
+        <a href="marine.html" class="tab-link active">Marine & Aviation</a>
+        <a href="engineering.html" class="tab-link">Engineering</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="section">
+    <div class="container">
+      <div class="content-box">
+        <div class="grid-2" style="gap: 3rem; align-items: start;">
+          <div>
+            <h3 style="font-size: 1.4rem; color: var(--text-primary); margin-bottom: 1.25rem; font-weight: 700;">Marine & Aviation Solutions</h3>
+            <p>
+              The origin of modern insurance comes from the marine insurance business and we take pride in our team’s expert ability to deliver results in this area. Through our extensive background in the marine cargo side we have developed an instinct for the nature of the various risks involved. This has allowed us to act as a catalyst to the mutual benefit between all parties involved in numerous occasions developing trust among our esteemed clientele.
+            </p>
+            <p>
+              Marine Cargo is our definite major business backed by our extensive experience in retail and reinsurance field, and especially project cargo is our specialized area.
+            </p>
+            <p>
+              We have worked on many projects in local and abroad, sometimes in collaboration with our engineering team which also has great experience and knowledge in various construction projects. This co-working allows us to provide the integrated and systematic service to our client.
+            </p>
+            <p>
+              Our team provides responsive, high security for our world-class services with competitive pricing.
+            </p>
+          </div>
+
+          <div>
+            <div class="key-list">
+              <div class="key-list-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76"/></svg>
+                Key Coverage Areas
+              </div>
+              <div class="key-item"><span class="key-dot"></span> General Cargo</div>
+              <div class="key-item"><span class="key-dot"></span> Project Cargo & Delay in Start-Up (DSU)</div>
+              <div class="key-item"><span class="key-dot"></span> Hull & Machinery, Yacht</div>
+              <div class="key-item"><span class="key-dot"></span> Marine & Airport Liability</div>
+              <div class="key-item"><span class="key-dot"></span> Protection & Indemnity (P&I)</div>
+              <div class="key-item"><span class="key-dot"></span> Charterer's Liability</div>
+            </div>
+
+            <div style="margin-top: 2rem; background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.5rem;">
+              <h4 style="color: var(--text-primary); font-size: 1.05rem; margin-bottom: 0.5rem;">전담 문의</h4>
+              <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 1rem;">Marine & Aviation 관련 문의는 전담 부서로 연락 주시기 바랍니다.</p>
+              <a href="mailto:marine@dwins.co.kr" class="btn btn-primary" style="width: 100%;">
+                marine@dwins.co.kr 문의하기
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="../images/logo.png" alt="INS Corp.">
+          <div class="footer-info">
+            <p><strong>주식회사 인스보험중개 (INS Corp.)</strong></p>
+            <p>(04540) 서울시 중구 남대문로 120 그레이츠청계 6층</p>
+            <p>6th Floor, Greits Cheonggye, 120 Namdaemun-ro, Jung-gu, Seoul, Korea 04540</p>
+            <p style="margin-top: 0.5rem;">TEL: +82-2-2088-2727 &nbsp;|&nbsp; FAX: +82-2-2088-2740</p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <div class="footer-links">
+            <a href="message.html" class="footer-link">About Us</a>
+            <a href="service.html" class="footer-link">Our Service</a>
+            <a href="business_line.html" class="footer-link">Business Line</a>
+            <a href="network.html" class="footer-link">Overseas Network</a>
+            <a href="contribution.html" class="footer-link">Social Contribution</a>
+            <a href="contacts.html" class="footer-link">Contacts Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="contacts.html" class="footer-link">Department Contacts</a>
+            <a href="location.html" class="footer-link">Office Location</a>
+            <a href="assurex.html" class="footer-link">Assurex Global</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; INS Corp. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

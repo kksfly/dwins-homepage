@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location | INS Corp.</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="../css/style.css?v=5">
+  <style>
+    .map-container {
+      position: relative;
+      width: 100%;
+      height: 480px;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .traffic-box {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+    .traffic-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+    .traffic-item:last-child {
+      margin-bottom: 0;
+    }
+    .traffic-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.35rem 0.75rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+      border-radius: 6px;
+      flex-shrink: 0;
+      min-width: 58px;
+      text-align: center;
+    }
+    .badge-subway {
+      background-color: rgba(2, 132, 199, 0.12);
+      color: var(--brand-blue);
+      border: 1px solid rgba(2, 132, 199, 0.3);
+    }
+    .badge-bus {
+      background-color: rgba(16, 185, 129, 0.12);
+      color: #059669;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="brand-logo" aria-label="INS Corp. 홈으로 이동">
+        <img src="../images/logo.png" alt="INS Corp. Innovation & Solution">
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="주요 메뉴">
+        <div class="nav-item has-dropdown">
+          <a href="message.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            ABOUT US
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="message.html" class="dropdown-link">CEO's Message</a>
+            <a href="vision.html" class="dropdown-link">Vision & Philosophy</a>
+            <a href="history.html" class="dropdown-link">History</a>
+            <a href="organization.html" class="dropdown-link">Organization</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="service.html" class="nav-link">OUR SERVICE</a>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a href="business_line.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            BUSINESS LINE
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="business_line.html" class="dropdown-link">Overview</a>
+            <a href="property.html" class="dropdown-link">Property & Treaty</a>
+            <a href="casualty.html" class="dropdown-link">Casualty & Specialty</a>
+            <a href="marine.html" class="dropdown-link">Marine & Aviation</a>
+            <a href="engineering.html" class="dropdown-link">Engineering</a>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a href="network.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            OVERSEAS NETWORK
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="network.html" class="dropdown-link">Overview</a>
+            <a href="assurex.html" class="dropdown-link">Assurex Global</a>
+            <a href="verspieren.html" class="dropdown-link">Verspieren</a>
+            <a href="brokerslink.html" class="dropdown-link">Brokerslink</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="contribution.html" class="nav-link">SOCIAL CONTRIBUTION</a>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a href="contacts.html" class="nav-link active" aria-haspopup="true" aria-expanded="false">
+            CONTACTS US
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="contacts.html" class="dropdown-link">Contacts</a>
+            <a href="location.html" class="dropdown-link">Location</a>
+          </div>
+        </div>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="메뉴 토글" aria-expanded="false">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header bg-contacts">
+    <div class="container">
+      <span class="page-category">Directions</span>
+      <h1 class="page-title">Location</h1>
+      <p class="page-desc">INS Corp. 본사로 오시는 길을 상세히 안내해 드립니다.</p>
+
+      <div class="subpage-tabs">
+        <a href="contacts.html" class="tab-link">Contacts</a>
+        <a href="location.html" class="tab-link active">Location</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="section">
+    <div class="container">
+      <!-- Address Header -->
+      <div style="background: var(--bg-surface); border: 1px solid var(--border-color); border-radius: 14px; padding: 2rem; margin-bottom: 2rem; box-shadow: var(--shadow-sm);">
+        <h2 style="font-size: 1.35rem; color: var(--text-primary); font-weight: 700; margin-bottom: 0.75rem;">주식회사 인스보험중개 본사 위치</h2>
+        <p style="color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 0.25rem;">
+          <strong style="color: var(--text-primary);">도로명 주소:</strong> (04540) 서울특별시 중구 남대문로 120 그레이츠청계 6층
+        </p>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">
+          6th Floor, Greits Cheonggye, 120 Namdaemun-ro, Jung-gu, Seoul, Korea 04540
+        </p>
+        <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.75rem;">
+          TEL: +82-2-2088-2727 &nbsp;|&nbsp; FAX: +82-2-2088-2740
+        </p>
+      </div>
+
+      <!-- Responsive Google Map -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357ca3871cf8e301%3A0xa4891da135337df4!2z6re466CI7J207LigIOyyreqzhChHUkVJVFMgQ0hFT05HR1lFKQ!5e1!3m2!1sko!2skr!4v1793251681280!5m2!1sko!2skr"
+          title="INS Corp. Location Map"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+      </div>
+
+      <!-- Transportation Information -->
+      <div class="traffic-box" style="box-shadow: var(--shadow-sm);">
+        <h3 style="font-size: 1.2rem; color: var(--text-primary); font-weight: 700; margin-bottom: 1.25rem;">대중교통 안내 (Public Transportation)</h3>
+        
+        <div class="traffic-item">
+          <span class="traffic-badge badge-subway">지하철</span>
+          <div style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+            <strong style="color: var(--text-primary);">2호선 을지로입구역</strong> 2번 또는 3번 출구에서 도보 약 3분<br>
+            <strong style="color: var(--text-primary);">1호선 종각역</strong> 5번 출구 (영풍문고 방면)에서 광통교 방향 도보 약 5분
+          </div>
+        </div>
+
+        <div class="traffic-item">
+          <span class="traffic-badge badge-bus">버스</span>
+          <div style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+            <strong>을지로입구역·광교 정류장:</strong> 간선 101, 143, 151, 152, 202, 261, 405, 501, 701, 702A, 702B 등 하차 후 도보 2분
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="../images/logo.png" alt="INS Corp.">
+          <div class="footer-info">
+            <p><strong>주식회사 인스보험중개 (INS Corp.)</strong></p>
+            <p>(04540) 서울시 중구 남대문로 120 그레이츠청계 6층</p>
+            <p>6th Floor, Greits Cheonggye, 120 Namdaemun-ro, Jung-gu, Seoul, Korea 04540</p>
+            <p style="margin-top: 0.5rem;">TEL: +82-2-2088-2727 &nbsp;|&nbsp; FAX: +82-2-2088-2740</p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <div class="footer-links">
+            <a href="message.html" class="footer-link">About Us</a>
+            <a href="service.html" class="footer-link">Our Service</a>
+            <a href="business_line.html" class="footer-link">Business Line</a>
+            <a href="network.html" class="footer-link">Overseas Network</a>
+            <a href="contribution.html" class="footer-link">Social Contribution</a>
+            <a href="contacts.html" class="footer-link">Contacts Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="contacts.html" class="footer-link">Department Contacts</a>
+            <a href="location.html" class="footer-link">Office Location</a>
+            <a href="assurex.html" class="footer-link">Assurex Global</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; INS Corp. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

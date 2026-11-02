@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Contribution | INS Corp.</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="../css/style.css?v=5">
+  <style>
+    .contrib-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all var(--transition-normal);
+    }
+    .contrib-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--brand-blue-light);
+      box-shadow: var(--shadow-lg);
+    }
+    .contrib-img-box {
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+    }
+    .contrib-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .contrib-card:hover .contrib-img-box img {
+      transform: scale(1.05);
+    }
+    .contrib-body {
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .contrib-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 0.75rem;
+    }
+    .contrib-desc {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a href="../index.html" class="brand-logo" aria-label="INS Corp. 홈으로 이동">
+        <img src="../images/logo.png" alt="INS Corp. Innovation & Solution">
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="주요 메뉴">
+        <div class="nav-item has-dropdown">
+          <a href="message.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            ABOUT US
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="message.html" class="dropdown-link">CEO's Message</a>
+            <a href="vision.html" class="dropdown-link">Vision & Philosophy</a>
+            <a href="history.html" class="dropdown-link">History</a>
+            <a href="organization.html" class="dropdown-link">Organization</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="service.html" class="nav-link">OUR SERVICE</a>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a href="business_line.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            BUSINESS LINE
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="business_line.html" class="dropdown-link">Overview</a>
+            <a href="property.html" class="dropdown-link">Property & Treaty</a>
+            <a href="casualty.html" class="dropdown-link">Casualty & Specialty</a>
+            <a href="marine.html" class="dropdown-link">Marine & Aviation</a>
+            <a href="engineering.html" class="dropdown-link">Engineering</a>
+          </div>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a href="network.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            OVERSEAS NETWORK
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="network.html" class="dropdown-link">Overview</a>
+            <a href="assurex.html" class="dropdown-link">Assurex Global</a>
+            <a href="verspieren.html" class="dropdown-link">Verspieren</a>
+            <a href="brokerslink.html" class="dropdown-link">Brokerslink</a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="contribution.html" class="nav-link active">SOCIAL CONTRIBUTION</a>
+        </div>
+
+        <div class="nav-item has-dropdown">
+          <a href="contacts.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+            CONTACTS US
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="contacts.html" class="dropdown-link">Contacts</a>
+            <a href="location.html" class="dropdown-link">Location</a>
+          </div>
+        </div>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="메뉴 토글" aria-expanded="false">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header bg-contribution">
+    <div class="container">
+      <span class="page-category">Corporate Social Responsibility</span>
+      <h1 class="page-title">Social Contribution</h1>
+      <p class="page-desc">기업의 사회적 책임을 다하며, 따뜻하고 풍요로운 내일을 함께 만들어갑니다.</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="section">
+    <div class="container">
+      <div class="content-box" style="margin-top: 0; margin-bottom: 3.5rem;">
+        <h2 style="font-size: 1.5rem; color: var(--text-primary); font-weight: 700; margin-bottom: 1rem;">
+          "Fulfilling the duty of the company to advance a fertile society."
+        </h2>
+        <p>
+          INS Corp. is happy to provide financial support and employee volunteering to neighborhood teenagers who are in need. We are committed to the economic empowerment of teenagers and families, particularly those in need, in the communities where we work so that they can improve their standard of living.
+        </p>
+        <p>
+          We do this through a powerful combination of financial support and employee engagement. This approach, which includes skills-based volunteering and financial capability, enables us to significantly enhance the value of the support we provide to our nonprofit partners and increase the long-term impact of our fulfillment.
+        </p>
+        <p>
+          We provide grant support for programs that are aligned with our priority focus areas, promote collaboration and effective use of philanthropic resources, engage our employees, and demonstrate impact and positive outcomes. We are particularly interested in supporting program innovations for our society.
+        </p>
+      </div>
+
+      <!-- Activity Cards Grid -->
+      <div class="grid-3">
+        <!-- Card 1 -->
+        <div class="contrib-card">
+          <div class="contrib-img-box">
+            <img src="../images/contribution_1.jpg" alt="Youth & Community Support">
+          </div>
+          <div class="contrib-body">
+            <h3 class="contrib-title">Youth & Family Empowerment</h3>
+            <p class="contrib-desc">
+              저소득층 청소년 및 가정을 위한 실질적 재정 지원과 장학 프로그램, 임직원 멘토링 봉사활동을 전개하여 건강한 사회 구성원으로 성장할 수 있도록 돕습니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="contrib-card">
+          <div class="contrib-img-box">
+            <img src="../images/contribution_2.jpg" alt="Welfare Facilities Support">
+          </div>
+          <div class="contrib-body">
+            <h3 class="contrib-title">Welfare & Care Facilities</h3>
+            <p class="contrib-desc">
+              치매 및 중증 질환 어르신 요양시설, 아동 복지시설 및 장애인 생활시설에 정기적인 물품 기부와 재정 후원을 아끼지 않고 있습니다.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="contrib-card">
+          <div class="contrib-img-box">
+            <img src="../images/contribution_3.jpg" alt="Regional Social Activities">
+          </div>
+          <div class="contrib-body">
+            <h3 class="contrib-title">Regional Community & Environment</h3>
+            <p class="contrib-desc">
+              산과 하천 등 지역 환경 정화 활동, 교통안전 캠페인 지원, 농어촌 자매결연 마을 후원 등 지역사회와 상생하는 다채로운 나눔 활동을 지속합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="../images/logo.png" alt="INS Corp.">
+          <div class="footer-info">
+            <p><strong>주식회사 인스보험중개 (INS Corp.)</strong></p>
+            <p>(04540) 서울시 중구 남대문로 120 그레이츠청계 6층</p>
+            <p>6th Floor, Greits Cheonggye, 120 Namdaemun-ro, Jung-gu, Seoul, Korea 04540</p>
+            <p style="margin-top: 0.5rem;">TEL: +82-2-2088-2727 &nbsp;|&nbsp; FAX: +82-2-2088-2740</p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <div class="footer-links">
+            <a href="message.html" class="footer-link">About Us</a>
+            <a href="service.html" class="footer-link">Our Service</a>
+            <a href="business_line.html" class="footer-link">Business Line</a>
+            <a href="network.html" class="footer-link">Overseas Network</a>
+            <a href="contribution.html" class="footer-link">Social Contribution</a>
+            <a href="contacts.html" class="footer-link">Contacts Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="contacts.html" class="footer-link">Department Contacts</a>
+            <a href="location.html" class="footer-link">Office Location</a>
+            <a href="assurex.html" class="footer-link">Assurex Global</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; INS Corp. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+
+</html>
